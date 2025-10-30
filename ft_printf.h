@@ -6,12 +6,12 @@
 /*   By: naratass <naratass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 15:11:57 by naratass          #+#    #+#             */
-/*   Updated: 2025/10/24 15:11:58 by naratass         ###   ########.fr       */
+/*   Updated: 2025/10/30 13:12:21 by naratass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_PRINTF_H
-# define LIBFT_PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # if defined (__linux__)
 #  define PTRNULL "(nil)"
