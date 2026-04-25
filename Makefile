@@ -7,7 +7,7 @@ MAIN_PART = ft_fputaddr.c ft_fputchar.c ft_fputnbr_deci.c ft_fputstr.c ft_funisi
 OBJS = ${MAIN_PART:.c=.o}
 
 # Compiler and flag
-CC = gcc
+CC = cc
 FLAGS = -Wall -Wextra -Werror
 INCLUDE = -I .
 RM = rm -f
@@ -28,4 +28,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean rel
+.PHONY: all clean fclean re

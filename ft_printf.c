@@ -6,12 +6,11 @@
 /*   By: naratass <naratass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 11:12:19 by naratass          #+#    #+#             */
-/*   Updated: 2025/10/30 13:13:10 by naratass         ###   ########.fr       */
+/*   Updated: 2026/04/15 17:01:38 by naratass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 static int	check_format(va_list ap, const char format);
 
@@ -59,5 +58,6 @@ static int	check_format(va_list ap, const char format)
 		return (ft_fputchar('%'));
 	if (format == 'u')
 		return (ft_funsignednbr(va_arg(ap, int)));
-	return (ft_fputchar('%'));
+  else
+    return (-1);
 }
